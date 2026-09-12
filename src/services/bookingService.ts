@@ -1,6 +1,8 @@
 import { BookingData, BookingResponse } from '../types/salon';
 import { supabase } from '../lib/supabaseClient';
 
+const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/28825132/4d62674/';
+
 export const bookingService = {
   async createBooking(data: BookingData): Promise<BookingResponse> {
     try {
@@ -18,6 +20,19 @@ export const bookingService = {
       });
 
       if (error) throw error;
+
+      fetch(ZAPIER_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          booking_id: bookingId,
+          service_name: data.serviceName,
+          date: data.date,
+          time_slot: data.timeSlot,
+          customer_name: data.customerName,
+        customer_phone: data.customerPhone,
+        }),
+      }).catch((err) => console.error('Notification failed:', err));
 
       return {
         success: true,
