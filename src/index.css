@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-brand-50: #FAF8F5;
+    --color-brand-100: #F3ECE2;
+    --color-brand-200: #E6D6C3;
+    --color-brand-300: #D6BA9E;
+    --color-brand-400: #C59D77;
+    --color-brand-500: #B38356;
+    --color-brand-600: #966940;
+    --color-brand-700: #785131;
+    --color-brand-800: #5C3D24;
+    --color-brand-900: #3E2716;
+
+    --color-salon-bg: #FAF9F6;
+    --color-salon-card: #FFFFFF;
+    --color-salon-text: #1C1917;
+    --color-salon-muted: #78716C;
+    --color-salon-dark: #12100E;
+    --color-salon-surface: #F5F3EF;
+  }
+
+  body {
+    background-color: var(--color-salon-bg);
+    color: var(--color-salon-text);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Utilities for Agency-Quality Finish */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Smooth transitions */
+.transition-luxury {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hide scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
