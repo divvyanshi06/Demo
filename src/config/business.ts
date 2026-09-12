@@ -38,12 +38,12 @@ const IMAGES = {
 };
 
 export const salonConfig: BusinessConfig = {
-  name: "AURA SALON & BEAUTY STUDIO",
-  shortName: "Aura Salon",
+  name: "LUXURY SALON & BEAUTY STUDIO",
+  shortName: "Salon",
   tagline: "Where Beauty Meets Confidence",
   heroSubheading: "Premium hair, skin, and bespoke styling services tailored around your unique aura.",
-  description: "Aura Salon & Beauty Studio is Greater Kailash's premier luxury beauty destination. Dedicated to modern elegance, precision hair artistry, and holistic skin rejuvenation.",
-  logoText: "AURA",
+  description: "Luxury Salon & Beauty Studio is New Delhi's premier luxury beauty destination. Dedicated to modern elegance, precision hair artistry, and holistic skin rejuvenation.",
+  logoText: "SALON",
   logoSubtext: "LUXURY SALON",
   
   heroImageUrl: IMAGES.hero,
@@ -51,7 +51,7 @@ export const salonConfig: BusinessConfig = {
   ctaImageUrl: IMAGES.cta,
 
   contactDetails: {
-    address: "M-42, Main Market, Greater Kailash II",
+    address: "UPPER GROUND, PLOT 11, NEW DELHI",
     cityStatePincode: "New Delhi, Delhi 110048",
     landmark: "Opposite Starbucks, 1st Floor",
     phoneDisplay: "+91 9899571694",
