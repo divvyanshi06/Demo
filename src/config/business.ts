@@ -19,7 +19,7 @@ const IMAGES = {
   luxuryManicure: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=800",
   keratinTreatment: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800",
   hairSpa: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800",
-  hydraFacial: "https://images.unsplash.com/photo-1512290900673-70024421d960?auto=format&fit=crop&q=80&w=800",
+  hydraFacial: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFjaWFsJTIwbWFzc2FnZXxlbnwwfHwwfHx8MA%3D%3D",
 
   // Gallery
   galleryHair1: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1000",
